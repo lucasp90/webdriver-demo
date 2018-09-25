@@ -2,6 +2,7 @@ pipeline {
     agent { 
         dockerfile {
             filename 'Dockerfile'
+            args '-v $(pwd):/usr/workspace'
         }
     }
 

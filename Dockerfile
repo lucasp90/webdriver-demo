@@ -13,6 +13,7 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 # set display port to avoid crash
 ENV DISPLAY=:99
+WORKDIR /usr/workspace
 
 # install selenium
 RUN pip install selenium==3.13.0
