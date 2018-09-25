@@ -1,8 +1,9 @@
 pipeline {
     agent { 
-        dockerfile true 
-        filename 'Dockerfile'
-        label 'webdriver'
+        dockerfile {
+            filename 'Dockerfile'
+            label 'webdriver'
+        }
     }
 
     stages {
