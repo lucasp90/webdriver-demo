@@ -14,9 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('/usr/workspace') {
-                    sh 'python test_script.py'
-                }
+                sh 'python test_script.py'
             }
         }
         stage('Deploy') {
