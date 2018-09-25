@@ -12,8 +12,8 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                echo 'Testing..'
+            dir('/usr/workspace') {
+                sh 'python test_script.py'
             }
         }
         stage('Deploy') {
